@@ -74,4 +74,6 @@ echo -e "${YELLOW}WARNING!${NC} Check that the output yaml file has no"
 echo -e " 'nan' in the origin - otherwise replace with 0"
 echo -e "==================================================="
 
+echo "Replacing nan values by 0 in ${data_path}/map.yaml"
+sed -i 's/nan/0.0/g' "${data_path}/map.yaml"
 
