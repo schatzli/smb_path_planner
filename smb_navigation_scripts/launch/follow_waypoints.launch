@@ -8,7 +8,7 @@
   <arg name="base_frame_id"   default="base_link"/>
   
   <arg name="output_folder"   default="$(find smb_navigation_scripts)/saved_path"/>
-  <arg name="input_filename"  default="waypoints.csv"/> <!-- This has to have csv extension! -->
+  <arg name="input_filename"  default="path01.csv"/> <!-- This has to have csv extension! -->
   <arg name="output_filename" default="waypoints_out.csv"/> <!-- This has to have csv extension! -->
   
   <arg name="addpose_topic"   default="/initialpose"/>
