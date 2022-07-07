@@ -6,7 +6,7 @@ global_costmap:
   transform_tolerance: 0.5 # [s]
   
   resolution: 0.20
-  inflation_radius: 0.50
+  inflation_radius: 1.
   rolling_window: true # Map moves with robot
   map_topic: /traversability_occ_map
     
@@ -33,7 +33,7 @@ global_costmap:
       marking: true
       clearing: true
       min_obstacle_height: -100.0
-      max_obstacle_height: 100.0
+      max_obstacle_height: 200.0
       observation_persistence: 0.4
       inf_is_valid: true   
 

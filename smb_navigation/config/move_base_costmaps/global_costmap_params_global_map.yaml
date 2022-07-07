@@ -7,7 +7,7 @@ global_costmap:
   
   rolling_window: true
   resolution: 0.20
-  inflation_radius: 0.50
+  inflation_radius: 1.
   
   width: 200.0
   height: 200.0
@@ -35,7 +35,7 @@ global_costmap:
       marking: true
       clearing: true
       min_obstacle_height: -100.0
-      max_obstacle_height: 100.0
+      max_obstacle_height: 200.0
       observation_persistence: 0.4
       inf_is_valid: true   
 
