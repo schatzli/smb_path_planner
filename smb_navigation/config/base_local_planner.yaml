@@ -42,14 +42,14 @@ TebLocalPlannerROS:
     vertices: [ [0.4, 0.4], [0.4, -0.4], [-0.4, -0.4], [-0.4, 0.4] ] # for type "polygon"
 
   # GoalTolerance
-  xy_goal_tolerance: 1
-  yaw_goal_tolerance: 1
+  xy_goal_tolerance: 0.5
+  yaw_goal_tolerance: 0.5
   free_goal_vel: false
   complete_global_plan: false
 
   # Obstacles
   min_obstacle_dist: 0.3
-  inflation_dist: 0.4
+  inflation_dist: 0.2
   include_costmap_obstacles: True
   costmap_obstacles_behind_robot_dist: 3.0
   obstacle_poses_affected: 50
@@ -66,7 +66,7 @@ TebLocalPlannerROS:
   weight_max_vel_x: 2
   weight_max_vel_theta: 1
   weight_acc_lim_x: 1
-  weight_acc_lim_theta: 1
+  weight_acc_lim_theta: 0.7
   weight_kinematics_nh: 1000
   weight_kinematics_forward_drive: 1.0
   weight_kinematics_turning_radius: 0.5
